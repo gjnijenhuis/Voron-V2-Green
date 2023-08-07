@@ -15930,3 +15930,26 @@ Stats 3976.4: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000006 mcu_task_std
 Stats 3977.4: gcodein=0  mcu: mcu_awake=0.001 mcu_task_avg=0.000006 mcu_task_stddev=0.000004 bytes_write=8087 bytes_read=27094 bytes_retransmit=9 bytes_invalid=0 send_seq=584 receive_seq=584 retransmit_seq=2 srtt=0.000 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=179998747 rpi: mcu_awake=0.001 mcu_task_avg=0.000010 mcu_task_stddev=0.000011 bytes_write=1168 bytes_read=5478 bytes_retransmit=0 bytes_invalid=0 send_seq=169 receive_seq=169 retransmit_seq=0 srtt=0.000 rttvar=0.000 rto=0.025 ready_bytes=0 upcoming_bytes=0 freq=49999343 adj=49999731 heater_bed: target=0 temp=26.6 pwm=0.000 RaspberryPi: temp=66.2 mcu: temp=50.8 Chamber: temp=27.9  z_thermal_adjust: temp=27.6 sysload=1.21 cputime=144.877 memavail=1233996 print_time=0.007 buffer_time=0.000 print_stall=0 extruder: target=0 temp=24.3 pwm=0.000
 Command {update_git_script} timed out
 Running Command {update_git_script}...:
+Reinitialized existing Git repository in /home/pi/klipper-backup/.git/
+
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+	 rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+	 alternative filtering tool such as 'git filter-repo'
+	 (https://github.com/newren/git-filter-repo/) instead.  See the
+	 filter-branch manual page for more details; to squelch this warning,
+	 set FILTER_BRANCH_SQUELCH_WARNING=1.
+
+Proceeding with filter-branch...
+
+
+Cannot rewrite branches: You have unstaged changes.
+
+[main 4d76593] New backup from 07-08-23
+ 4 files changed, 148 insertions(+)
+
+To https://github.com/gjnijenhuis/Voron-V2-Green.git
+   7b78c06..4d76593  main -> main
+
+Command {update_git_script} finished
+
+Running Command {update_git_script}...:
