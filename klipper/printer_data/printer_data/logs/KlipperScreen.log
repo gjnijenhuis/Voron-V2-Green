@@ -8400,3 +8400,459 @@ Git Version: v0.3.4-13-g0a3dfbe
 2023-08-07 11:25:59,167 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu
 2023-08-07 11:25:59,182 [main_menu.py:add_device()] - Adding device: temperature_sensor Chamber
 2023-08-07 11:25:59,206 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 11:48:19,376 [base_panel.py:finish_updating()] - Finishing update
+2023-08-07 11:48:19,380 [KlippyGtk.py:remove_dialog()] - Removing Dialog
+2023-08-07 11:48:19,380 [screen.py:_menu_go_back()] - #### Menu go home
+2023-08-07 11:48:19,381 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 12:30:14,954 [screen.py:_load_panel()] - Loading panel: move
+2023-08-07 12:30:15,027 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 12:30:16,947 [move.py:change_distance()] - ### Distance 50
+2023-08-07 12:30:17,429 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 12:30:17,429 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:30:21,404 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 12:30:21,405 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:30:22,462 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 12:30:22,465 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:30:40,300 [screen.py:_menu_go_back()] - #### Menu go home
+2023-08-07 12:30:40,311 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 12:48:13,710 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-08-07 12:48:13,710 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-08-07 12:48:13,710 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-08-07 12:48:13,750 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-08-07 12:48:16,903 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-08-07 12:48:16,916 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-08-07 12:48:17,163 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-08-07 12:48:17,209 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-08-07 12:48:17,217 [printer.py:reinit()] - Klipper version: v0.11.0-257-ged66982b-dirty
+2023-08-07 12:48:17,217 [printer.py:reinit()] - # Extruders: 1
+2023-08-07 12:48:17,217 [printer.py:reinit()] - # Temperature devices: 4
+2023-08-07 12:48:17,217 [printer.py:reinit()] - # Fans: 5
+2023-08-07 12:48:17,217 [printer.py:reinit()] - # Output pins: 1
+2023-08-07 12:48:17,218 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-08-07 12:48:17,576 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&manual_probe&extruder&heater_bed&temperature_sensor RaspberryPi&temperature_sensor mcu&temperature_sensor Chamber&fan&fan_generic BedInner&fan_generic BedOuter&heater_fan hotend_fan&heater_fan controller_fan&filament_motion_sensor runout_sensor&output_pin caselight
+2023-08-07 12:48:17,602 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-08-07 12:48:17,607 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 12:48:17,617 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-08-07 12:48:17,618 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-08-07 12:48:17,618 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-08-07 12:48:17,618 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-08-07 12:48:17,619 [screen.py:init_printer()] - Printer initialized
+2023-08-07 12:48:17,620 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-08-07 12:48:17,621 [printer.py:change_state()] - Adding callback for state: startup
+2023-08-07 12:48:18,949 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-08-07 12:48:18,949 [printer.py:change_state()] - Adding callback for state: ready
+2023-08-07 12:48:19,018 [main_menu.py:__init__()] - ### Making MainMenu
+2023-08-07 12:48:19,024 [main_menu.py:add_device()] - Adding device: extruder
+2023-08-07 12:48:19,029 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-08-07 12:48:19,035 [main_menu.py:add_device()] - Adding device: temperature_sensor RaspberryPi
+2023-08-07 12:48:19,044 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu
+2023-08-07 12:48:19,050 [main_menu.py:add_device()] - Adding device: temperature_sensor Chamber
+2023-08-07 12:48:19,077 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 12:51:09,845 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 12:51:11,829 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 12:51:11,834 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:51:13,836 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 12:51:13,837 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:51:15,884 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 12:51:15,887 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:51:22,241 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 12:51:22,242 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:51:51,716 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 12:51:51,717 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:25,737 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:54:25,739 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:28,613 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:54:28,617 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:30,898 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:54:30,900 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:33,104 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:54:33,105 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:36,237 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:54:36,241 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:42,844 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 12:54:42,847 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:46,134 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 12:54:46,135 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:54:48,163 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 12:54:48,164 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:16,960 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:55:16,962 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:21,970 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 12:55:21,971 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:25,652 [move.py:change_distance()] - ### Distance 1
+2023-08-07 12:55:26,380 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:26,382 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:27,249 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:27,250 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:28,140 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:28,141 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:28,960 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:28,961 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:29,768 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:29,769 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:30,596 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:30,597 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:31,712 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:31,714 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:33,238 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:33,239 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:34,664 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 12:55:34,666 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:46,600 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:46,601 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:47,397 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:47,397 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:48,253 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:48,256 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:49,087 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:49,088 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:49,916 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:49,917 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:50,772 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:50,774 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:52,628 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:52,629 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:54,360 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:54,362 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:58,933 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:58,934 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:55:59,652 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:55:59,653 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 12:56:00,504 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 12:56:00,505 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:08:22,796 [screen.py:_menu_go_back()] - #### Menu go home
+2023-08-07 13:08:22,805 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 13:08:29,783 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 13:08:35,206 [screen.py:_load_panel()] - Loading panel: menu
+2023-08-07 13:08:35,284 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move > menu
+2023-08-07 13:08:35,302 [menu.py:arrangeMenuItems()] - X > homing Z-Tilt
+2023-08-07 13:08:37,493 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28 X'}
+2023-08-07 13:08:47,468 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28 Y'}
+2023-08-07 13:09:04,736 [screen.py:_menu_go_back()] - #### Menu go back
+2023-08-07 13:09:04,745 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 13:09:08,224 [move.py:change_distance()] - ### Distance 10
+2023-08-07 13:09:09,000 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:09:09,002 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:09,864 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:09:09,865 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:14,988 [move.py:change_distance()] - ### Distance 50
+2023-08-07 13:09:15,860 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:15,861 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:17,301 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:17,304 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:19,020 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:19,021 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:20,776 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:20,779 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:22,633 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:22,634 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:09:24,664 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:09:24,665 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:41,884 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:41,887 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:43,716 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:43,718 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:46,085 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:46,086 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:47,560 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:47,561 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:49,280 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:49,281 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:10:50,988 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:10:50,990 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:11:36,890 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move > menu
+2023-08-07 13:11:36,912 [menu.py:arrangeMenuItems()] - X > homing Z-Tilt
+2023-08-07 13:11:37,632 [screen.py:_send_action()] - printer.gcode.script: {'script': 'G28'}
+2023-08-07 13:12:07,516 [screen.py:_menu_go_back()] - #### Menu go back
+2023-08-07 13:12:07,526 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 13:12:09,710 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:12:09,711 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:11,950 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:12:11,951 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:13,921 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:12:13,922 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:17,708 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:12:17,711 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:19,481 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:12:19,482 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:21,297 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:12:21,297 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:23,585 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:12:23,585 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:26,132 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:12:26,134 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:28,692 [move.py:change_distance()] - ### Distance 10
+2023-08-07 13:12:29,344 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:12:29,346 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:30,380 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:12:30,381 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:31,256 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:12:31,258 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:32,485 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:12:32,489 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:34,293 [move.py:change_distance()] - ### Distance 1
+2023-08-07 13:12:37,424 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:37,425 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:38,576 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:38,578 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:39,836 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:39,837 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:41,121 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:41,123 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:42,437 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:42,439 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:43,796 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:43,799 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:12:45,216 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+1 F3000
+2023-08-07 13:12:45,217 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:16:08,212 [screen.py:_menu_go_back()] - #### Menu go home
+2023-08-07 13:16:08,222 [screen.py:attach_panel()] - Current panel hierarchy: main_menu
+2023-08-07 13:20:56,471 [screen.py:attach_panel()] - Current panel hierarchy: main_menu > move
+2023-08-07 13:20:59,260 [move.py:change_distance()] - ### Distance 50
+2023-08-07 13:20:59,776 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:20:59,778 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:21:03,817 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:21:03,819 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:21:09,164 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:21:09,165 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:40,708 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z-50 F600
+2023-08-07 13:23:40,709 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:42,684 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z-50 F600
+2023-08-07 13:23:42,685 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:44,316 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:23:44,317 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:53,128 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:23:53,129 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:54,973 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:23:54,976 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:57,040 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:23:57,041 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:23:58,864 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:23:58,865 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:00,824 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+50 F3000
+2023-08-07 13:24:00,825 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:03,024 [move.py:change_distance()] - ### Distance 1
+2023-08-07 13:24:03,584 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:03,585 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:04,421 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:04,421 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:05,000 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-1 F3000
+2023-08-07 13:24:05,001 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:06,696 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:06,698 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:07,592 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:07,594 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:09,836 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:09,837 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:10,709 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:10,709 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:13,932 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:13,935 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:15,388 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:15,391 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:16,413 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y+1 F3000
+2023-08-07 13:24:16,413 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:20,352 [move.py:change_distance()] - ### Distance 10
+2023-08-07 13:24:20,977 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-10 F3000
+2023-08-07 13:24:20,978 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:21,981 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-10 F3000
+2023-08-07 13:24:21,982 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:22,892 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-10 F3000
+2023-08-07 13:24:22,895 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:23,713 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-10 F3000
+2023-08-07 13:24:23,717 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:24,632 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-10 F3000
+2023-08-07 13:24:24,633 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:27,825 [move.py:change_distance()] - ### Distance 50
+2023-08-07 13:24:29,148 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z-50 F600
+2023-08-07 13:24:29,149 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:49,868 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:24:49,869 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:24:53,168 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:24:53,170 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:25:15,756 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z-50 F600
+2023-08-07 13:25:15,757 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:25:18,940 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z-50 F600
+2023-08-07 13:25:18,941 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:26:32,736 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:26:32,738 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:26:35,377 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X-50 F3000
+2023-08-07 13:26:35,378 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:26:40,888 [move.py:change_distance()] - ### Distance 10
+2023-08-07 13:26:41,377 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:26:41,378 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:26:42,472 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+10 F3000
+2023-08-07 13:26:42,473 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:27:06,488 [move.py:change_distance()] - ### Distance 50
+2023-08-07 13:27:06,960 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:27:06,961 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:27:08,489 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:27:08,490 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:27:10,100 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 X+50 F3000
+2023-08-07 13:27:10,101 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:27:26,252 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:27:26,253 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:27:28,328 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Z+50 F600
+2023-08-07 13:27:28,329 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:19,745 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:19,748 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:20,673 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:20,675 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:22,040 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:22,041 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:23,484 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:23,485 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:24,108 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:24,109 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:28:24,880 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G91
+G1 Y-50 F3000
+2023-08-07 13:28:24,883 [KlippyWebsocket.py:gcode_script()] - Sending printer.gcode.script: G90
+2023-08-07 13:53:35,034 [printer.py:change_state()] - Changing state from 'ready' to 'disconnected'
+2023-08-07 13:53:35,034 [printer.py:change_state()] - Adding callback for state: disconnected
+2023-08-07 13:53:35,036 [screen.py:state_disconnected()] - ### Going to disconnected
+2023-08-07 13:53:35,077 [screen.py:attach_panel()] - Current panel hierarchy: splash_screen
+2023-08-07 13:53:37,901 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/info
+2023-08-07 13:53:37,919 [KlippyRest.py:send_request()] - 404 Client Error>>Not Found for url>>http://127.0.0.1:7125/machine/device_power/devices
+2023-08-07 13:53:38,710 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/info
+2023-08-07 13:53:38,752 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?configfile
+2023-08-07 13:53:38,759 [printer.py:reinit()] - Klipper version: v0.11.0-257-ged66982b-dirty
+2023-08-07 13:53:38,760 [printer.py:reinit()] - # Extruders: 1
+2023-08-07 13:53:38,760 [printer.py:reinit()] - # Temperature devices: 4
+2023-08-07 13:53:38,760 [printer.py:reinit()] - # Fans: 5
+2023-08-07 13:53:38,760 [printer.py:reinit()] - # Output pins: 1
+2023-08-07 13:53:38,761 [KlippyWebsocket.py:object_subscription()] - Sending printer.objects.subscribe
+2023-08-07 13:53:39,108 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/printer/objects/query?bed_mesh&configfile&display_status&extruder&fan&gcode_move&heater_bed&idle_timeout&pause_resume&print_stats&toolhead&virtual_sdcard&webhooks&motion_report&firmware_retraction&exclude_object&manual_probe&extruder&heater_bed&temperature_sensor RaspberryPi&temperature_sensor mcu&temperature_sensor Chamber&fan&fan_generic BedInner&fan_generic BedOuter&heater_fan hotend_fan&heater_fan controller_fan&filament_motion_sensor runout_sensor&output_pin caselight
+2023-08-07 13:53:39,134 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/temperature_store
+2023-08-07 13:53:39,139 [printer.py:init_temp_store()] - Temp store: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 13:53:39,148 [KlippyRest.py:send_request()] - Sending request to http://127.0.0.1:7125/server/config
+2023-08-07 13:53:39,150 [screen.py:init_tempstore()] - Temperature store size: 1200
+2023-08-07 13:53:39,151 [files.py:initialize()] - Gcodes path: /home/pi/printer_data/gcodes
+2023-08-07 13:53:39,151 [KlippyWebsocket.py:get_file_list()] - Sending server.files.list
+2023-08-07 13:53:39,153 [screen.py:init_printer()] - Printer initialized
+2023-08-07 13:53:39,155 [printer.py:change_state()] - Changing state from 'disconnected' to 'startup'
+2023-08-07 13:53:39,155 [printer.py:change_state()] - Adding callback for state: startup
+2023-08-07 13:53:40,483 [printer.py:change_state()] - Changing state from 'startup' to 'ready'
+2023-08-07 13:53:40,483 [printer.py:change_state()] - Adding callback for state: ready
+2023-08-07 13:53:40,550 [main_menu.py:__init__()] - ### Making MainMenu
+2023-08-07 13:53:40,557 [main_menu.py:add_device()] - Adding device: extruder
+2023-08-07 13:53:40,563 [main_menu.py:add_device()] - Adding device: heater_bed
+2023-08-07 13:53:40,568 [main_menu.py:add_device()] - Adding device: temperature_sensor RaspberryPi
+2023-08-07 13:53:40,574 [main_menu.py:add_device()] - Adding device: temperature_sensor mcu
+2023-08-07 13:53:40,579 [main_menu.py:add_device()] - Adding device: temperature_sensor Chamber
+2023-08-07 13:53:40,603 [screen.py:attach_panel()] - Current panel hierarchy: main_menu

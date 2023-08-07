@@ -2091,3 +2091,67 @@ Repo Warnings:
 2023-08-07 11:25:59,570 [job_state.py:_handle_started()] - Job state initialized: standby
 2023-08-07 11:25:59,863 [klippy_connection.py:_check_ready()] - Klippy ready
 2023-08-07 11:26:00,332 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 11:42:20,662 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 11:42:20,736 [app.py:post()] - Processing Uploaded File: variables.cfg
+2023-08-07 11:42:20,744 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 90.00ms
+2023-08-07 11:44:30,339 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: {'error': 'WebRequestError', 'message': 'Probe samples exceed samples_tolerance'}
+2023-08-07 11:45:32,427 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2023-08-07 11:46:32,428 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2023-08-07 11:47:32,430 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.01 seconds
+2023-08-07 11:48:32,433 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2023-08-07 11:49:32,434 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 300.01 seconds
+2023-08-07 11:50:32,446 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 360.02 seconds
+2023-08-07 11:51:32,447 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 420.02 seconds
+2023-08-07 11:52:32,448 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 480.02 seconds
+2023-08-07 11:53:32,452 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 540.03 seconds
+2023-08-07 12:30:33,482 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2023-08-07 12:37:22,191 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2023-08-07 12:38:22,192 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2023-08-07 12:39:22,194 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.01 seconds
+2023-08-07 12:40:22,196 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2023-08-07 12:43:17,345 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2023-08-07 12:44:17,347 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 120.00 seconds
+2023-08-07 12:45:17,349 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 180.00 seconds
+2023-08-07 12:45:33,485 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 10.133.8.66
+2023-08-07 12:46:17,351 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 240.01 seconds
+2023-08-07 12:48:03,522 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 10.133.8.66
+2023-08-07 12:48:12,619 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 12:48:12,622 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 12:48:12,627 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 9.49ms
+2023-08-07 12:48:13,707 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2023-08-07 12:48:14,978 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2023-08-07 12:48:16,899 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2023-08-07 12:48:16,921 [app.py:log_request()] - 404 GET /machine/device_power/devices (127.0.0.1) [No User] 8.17ms
+2023-08-07 12:48:17,620 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2023-08-07 12:48:18,947 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2023-08-07 12:48:18,949 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2023-08-07 12:48:19,199 [job_state.py:_handle_started()] - Job state initialized: standby
+2023-08-07 12:48:19,471 [klippy_connection.py:_check_ready()] - Klippy ready
+2023-08-07 12:48:19,969 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 12:55:16,967 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: {'error': 'WebRequestError', 'message': 'Move out of range: 0.000 350.000 160.000 [0.000]'}
+2023-08-07 12:55:21,978 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: {'error': 'WebRequestError', 'message': 'Move out of range: 0.000 350.000 160.000 [0.000]'}
+2023-08-07 12:55:34,670 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: {'error': 'WebRequestError', 'message': 'Move out of range: 0.000 309.000 160.001 [0.000]'}
+2023-08-07 13:07:48,728 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 13:07:48,731 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 13:07:48,737 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 10.17ms
+2023-08-07 13:08:13,583 [common.py:build_error()] - JSON-RPC Request Error - Requested Method: printer.gcode.script, Code: 400, Message: {'error': 'WebRequestError', 'message': 'Endstop z still triggered after retract'}
+2023-08-07 13:13:22,904 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 13:13:22,908 [app.py:post()] - Processing Uploaded File: variables.cfg
+2023-08-07 13:13:22,913 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 9.39ms
+2023-08-07 13:14:06,559 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 13:14:06,561 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 13:14:06,567 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 9.21ms
+2023-08-07 13:50:33,507 [authorization.py:_prune_conn_handler()] - Trusted Connection Expired, IP: 127.0.0.1
+2023-08-07 13:53:33,955 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 13:53:33,958 [app.py:post()] - Processing Uploaded File: printer.cfg
+2023-08-07 13:53:33,965 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 11.20ms
+2023-08-07 13:53:35,031 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2023-08-07 13:53:36,289 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2023-08-07 13:53:37,899 [authorization.py:_check_trusted_connection()] - Trusted Connection Detected, IP: 127.0.0.1
+2023-08-07 13:53:37,912 [app.py:log_request()] - 404 GET /machine/device_power/devices (127.0.0.1) [No User] 2.84ms
+2023-08-07 13:53:39,154 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2023-08-07 13:53:40,741 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2023-08-07 13:53:40,743 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2023-08-07 13:53:40,990 [job_state.py:_handle_started()] - Job state initialized: standby
+2023-08-07 13:53:41,294 [klippy_connection.py:_check_ready()] - Klippy ready
+2023-08-07 13:53:41,757 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
