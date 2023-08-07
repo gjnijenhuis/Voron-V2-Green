@@ -16054,3 +16054,26 @@ To https://github.com/gjnijenhuis/Voron-V2-Green.git
 Command {update_git_script} finished
 
 Running Command {update_git_script}...:
+Reinitialized existing Git repository in /home/pi/klipper-backup/.git/
+
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+	 rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+	 alternative filtering tool such as 'git filter-repo'
+	 (https://github.com/newren/git-filter-repo/) instead.  See the
+	 filter-branch manual page for more details; to squelch this warning,
+	 set FILTER_BRANCH_SQUELCH_WARNING=1.
+
+Proceeding with filter-branch...
+
+
+Cannot rewrite branches: You have unstaged changes.
+
+[main 7d7a980] New backup from 07-08-23
+ 3 files changed, 101 insertions(+)
+
+To https://github.com/gjnijenhuis/Voron-V2-Green.git
+   ff11946..7d7a980  main -> main
+
+Command {update_git_script} finished
+
+Running Command {update_git_script}...:

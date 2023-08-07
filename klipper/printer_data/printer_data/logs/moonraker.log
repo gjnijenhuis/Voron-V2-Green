@@ -1001,3 +1001,252 @@ Diverged: False
 2023-08-07 11:05:24,743 [klippy_connection.py:_check_ready()] - Klippy ready
 2023-08-07 11:05:25,240 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
 2023-08-07 11:06:29,252 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
+2023-08-07 11:12:33,936 [base_deploy.py:log_info()] - PackageKit: Detected 26 package updates:
+bind9-host
+bind9-libs
+ffmpeg
+libavcodec-dev
+libavcodec58
+libavdevice58
+libavfilter7
+libavformat-dev
+libavformat58
+libavresample4
+libavutil-dev
+libavutil56
+libcamera-apps-lite
+libcamera-dev
+libcamera0
+libgstreamer-plugins-base1.0-0
+libpostproc55
+libssl-dev
+libssl1.1
+libswresample-dev
+libswresample3
+libswscale5
+libx11-data
+openssl
+python3-libcamera
+python3-picamera2
+2023-08-07 11:12:34,002 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker status --porcelain -b) successfully finished
+2023-08-07 11:12:34,027 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker branch --list --no-color) successfully finished
+2023-08-07 11:12:34,049 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker remote get-url origin) successfully finished
+2023-08-07 11:12:35,044 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:35,058 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker merge-base --is-ancestor HEAD origin/master) successfully finished
+2023-08-07 11:12:35,072 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker rev-parse HEAD) successfully finished
+2023-08-07 11:12:35,093 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:35,107 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker rev-parse origin/master) successfully finished
+2023-08-07 11:12:35,127 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker describe origin/master --always --tags --long --abbrev=8) successfully finished
+2023-08-07 11:12:35,142 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker rev-list HEAD..fe120952ee06607d039af8f461028e9f5b817395 --count) successfully finished
+2023-08-07 11:12:35,160 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker log 797c62389d31de2ec6c386af83b9cd0957f50068..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2023-08-07 11:12:35,227 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/moonraker for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2023-08-07 11:12:35,227 [git_deploy.py:log_repo_info()] - Git Repo moonraker Detected:
+Owner: Arksine
+Repository Name: moonraker
+Path: /home/pi/moonraker
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Arksine/moonraker.git
+Recovery URL: https://github.com/Arksine/moonraker.git
+Current Commit SHA: 797c62389d31de2ec6c386af83b9cd0957f50068
+Upstream Commit SHA: fe120952ee06607d039af8f461028e9f5b817395
+Current Version: v0.8.0-136-g797c6238
+Upstream Version: v0.8.0-138-gfe120952
+Rollback Commit: 937c766ded8213d43ff58bde5355e31e13e35b88
+Rollback Branch: master
+Rollback Version: v0.8.0-125-g937c766d
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 2
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['moonraker/components/timelapse.py']
+2023-08-07 11:12:35,227 [base_deploy.py:log_info()] - Git Repo moonraker: Channel: dev
+2023-08-07 11:12:35,228 [base_deploy.py:log_info()] - Git Repo moonraker: Validity check for git repo passed
+2023-08-07 11:12:35,376 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper status --porcelain -b) successfully finished
+2023-08-07 11:12:35,415 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper branch --list --no-color) successfully finished
+2023-08-07 11:12:35,439 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper remote get-url origin) successfully finished
+2023-08-07 11:12:37,528 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:37,540 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper merge-base --is-ancestor HEAD origin/master) successfully finished
+2023-08-07 11:12:37,552 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper rev-parse HEAD) successfully finished
+2023-08-07 11:12:37,653 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:37,665 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper rev-parse origin/master) successfully finished
+2023-08-07 11:12:37,761 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper describe origin/master --always --tags --long --abbrev=8) successfully finished
+2023-08-07 11:12:37,775 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper rev-list HEAD..ed66982b8eb06ce8843d8b5163c6bd290e1754c9 --count) successfully finished
+2023-08-07 11:12:37,789 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper log fee385dad84acb1d6c763f620480cf67eab7cad7..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2023-08-07 11:12:37,903 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2023-08-07 11:12:37,904 [git_deploy.py:log_repo_info()] - Git Repo klipper Detected:
+Owner: Klipper3d
+Repository Name: klipper
+Path: /home/pi/klipper
+Remote: origin
+Branch: master
+Remote URL: https://github.com/Klipper3d/klipper.git
+Recovery URL: https://github.com/Klipper3d/klipper.git
+Current Commit SHA: fee385dad84acb1d6c763f620480cf67eab7cad7
+Upstream Commit SHA: ed66982b8eb06ce8843d8b5163c6bd290e1754c9
+Current Version: v0.11.0-251-gfee385da
+Upstream Version: v0.11.0-257-ged66982b
+Rollback Commit: ba4eed175df761e42ce2d6eb2692b82d8d1c779a
+Rollback Branch: master
+Rollback Version: v0.11.0-249-gba4eed17
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 6
+Diverged: False
+Repo Warnings:
+  Repo has untracked source files: ['klippy/extras/autotune_tmc.py', 'klippy/extras/gcode_shell_command.py', 'klippy/extras/motor_constants.py']
+2023-08-07 11:12:37,904 [base_deploy.py:log_info()] - Git Repo klipper: Channel: dev
+2023-08-07 11:12:37,905 [base_deploy.py:log_info()] - Git Repo klipper: Validity check for git repo passed
+2023-08-07 11:12:37,971 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config status --porcelain -b) successfully finished
+2023-08-07 11:12:37,999 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config branch --list --no-color) successfully finished
+2023-08-07 11:12:38,022 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config remote get-url origin) successfully finished
+2023-08-07 11:12:38,602 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:38,627 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config merge-base --is-ancestor HEAD origin/main) successfully finished
+2023-08-07 11:12:38,648 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config rev-parse HEAD) successfully finished
+2023-08-07 11:12:38,671 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:38,695 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/main --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2023-08-07 11:12:38,708 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klippain_config rev-list HEAD..67f6bb91b8e54ef516c7c6e724abe913f7c41dbb --count) successfully finished
+2023-08-07 11:12:38,709 [git_deploy.py:log_repo_info()] - Git Repo Klippain Detected:
+Owner: Frix-x
+Repository Name: klippain
+Path: /home/pi/klippain_config
+Remote: origin
+Branch: main
+Remote URL: https://github.com/Frix-x/klippain.git
+Recovery URL: https://github.com/Frix-x/klippain.git
+Current Commit SHA: 67f6bb91b8e54ef516c7c6e724abe913f7c41dbb
+Upstream Commit SHA: 67f6bb91b8e54ef516c7c6e724abe913f7c41dbb
+Current Version: v4.0.1-0-g67f6bb91
+Upstream Version: v4.0.1
+Rollback Commit: 67f6bb91b8e54ef516c7c6e724abe913f7c41dbb
+Rollback Branch: main
+Rollback Version: v4.0.1-0-g67f6bb9
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2023-08-07 11:12:38,709 [base_deploy.py:log_info()] - Git Repo Klippain: Channel: beta
+2023-08-07 11:12:38,709 [base_deploy.py:log_info()] - Git Repo Klippain: Validity check for git repo passed
+2023-08-07 11:12:39,084 [web_deploy.py:_log_client_info()] - Web Client mainsail Detected:
+Repo: mainsail-crew/mainsail
+Channel: stable
+Path: /home/pi/mainsail
+Local Version: v2.6.2
+Remote Version: v2.6.2
+Valid: True
+Fallback Client Detected: False
+Pre-release: False
+Download Url: https://github.com/mainsail-crew/mainsail/releases/download/v2.6.2/mainsail.zip
+Download Size: 2111282
+Content Type: application/zip
+Rollback Version: v2.6.1
+Rollback Repo: mainsail-crew/mainsail
+2023-08-07 11:12:39,107 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune status --porcelain -b) successfully finished
+2023-08-07 11:12:39,131 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune branch --list --no-color) successfully finished
+2023-08-07 11:12:39,154 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune remote get-url origin) successfully finished
+2023-08-07 11:12:39,664 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:39,676 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune merge-base --is-ancestor HEAD origin/main) successfully finished
+2023-08-07 11:12:39,690 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune rev-parse HEAD) successfully finished
+2023-08-07 11:12:39,706 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:39,718 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune rev-parse origin/main) successfully finished
+2023-08-07 11:12:39,735 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune describe origin/main --always --tags --long --abbrev=8) successfully finished
+2023-08-07 11:12:39,748 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper_tmc_autotune rev-list HEAD..31de1f7ead27313b1861bd9816ab2da09d167f90 --count) successfully finished
+2023-08-07 11:12:39,749 [git_deploy.py:log_repo_info()] - Git Repo klipper_tmc_autotune Detected:
+Owner: andrewmcgr
+Repository Name: klipper_tmc_autotune
+Path: /home/pi/klipper_tmc_autotune
+Remote: origin
+Branch: main
+Remote URL: https://github.com/andrewmcgr/klipper_tmc_autotune.git
+Recovery URL: https://github.com/andrewmcgr/klipper_tmc_autotune.git
+Current Commit SHA: 31de1f7ead27313b1861bd9816ab2da09d167f90
+Upstream Commit SHA: 31de1f7ead27313b1861bd9816ab2da09d167f90
+Current Version: v0.2.0-77-g31de1f7e
+Upstream Version: v0.2.0-77-g31de1f7e
+Rollback Commit: 31de1f7ead27313b1861bd9816ab2da09d167f90
+Rollback Branch: main
+Rollback Version: v0.2.0-77-g31de1f7
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+2023-08-07 11:12:39,749 [base_deploy.py:log_info()] - Git Repo klipper_tmc_autotune: Channel: dev
+2023-08-07 11:12:39,749 [base_deploy.py:log_info()] - Git Repo klipper_tmc_autotune: Validity check for git repo passed
+2023-08-07 11:12:39,820 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen status --porcelain -b) successfully finished
+2023-08-07 11:12:39,843 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen branch --list --no-color) successfully finished
+2023-08-07 11:12:39,865 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen remote get-url origin) successfully finished
+2023-08-07 11:12:40,688 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:40,704 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen merge-base --is-ancestor HEAD origin/master) successfully finished
+2023-08-07 11:12:40,717 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen rev-parse HEAD) successfully finished
+2023-08-07 11:12:40,749 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:40,763 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen rev-parse origin/master) successfully finished
+2023-08-07 11:12:40,788 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen describe origin/master --always --tags --long --abbrev=8) successfully finished
+2023-08-07 11:12:40,804 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen rev-list HEAD..0a3dfbeb10565973f4a4235ff08867763c3dab24 --count) successfully finished
+2023-08-07 11:12:40,821 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen log 520ba44c961e3ec6c15a9249e06e1e0ac98e770a..origin/master --format="sha:%H%x1Dauthor:%an%x1Ddate:%ct%x1Dsubject:%s%x1Dmessage:%b%x1E" --max-count=100) successfully finished
+2023-08-07 11:12:40,865 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/KlipperScreen for-each-ref --count=100 --sort='-creatordate' --contains=HEAD --merged=origin/master --format='%(if)%(*objecttype)%(then)%(*objecttype) %(*objectname)%(else)%(objecttype) %(objectname)%(end) %(refname)' 'refs/tags') successfully finished
+2023-08-07 11:12:40,867 [git_deploy.py:log_repo_info()] - Git Repo KlipperScreen Detected:
+Owner: KlipperScreen
+Repository Name: KlipperScreen
+Path: /home/pi/KlipperScreen
+Remote: origin
+Branch: master
+Remote URL: https://github.com/KlipperScreen/KlipperScreen.git
+Recovery URL: https://github.com/KlipperScreen/KlipperScreen.git
+Current Commit SHA: 520ba44c961e3ec6c15a9249e06e1e0ac98e770a
+Upstream Commit SHA: 0a3dfbeb10565973f4a4235ff08867763c3dab24
+Current Version: v0.3.4-5-g520ba44c
+Upstream Version: v0.3.4-13-g0a3dfbeb
+Rollback Commit: 304e285b7f8e167884fbbdb49044e9debc8e7f7e
+Rollback Branch: master
+Rollback Version: v0.3.3-10-g304e285b
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 8
+Diverged: False
+2023-08-07 11:12:40,867 [base_deploy.py:log_info()] - Git Repo KlipperScreen: Channel: dev
+2023-08-07 11:12:40,867 [base_deploy.py:log_info()] - Git Repo KlipperScreen: Validity check for git repo passed
+2023-08-07 11:12:40,904 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup status --porcelain -b) successfully finished
+2023-08-07 11:12:41,441 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup branch --list --no-color) successfully finished
+2023-08-07 11:12:41,464 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup remote get-url origin) successfully finished
+2023-08-07 11:12:41,465 [git_deploy.py:_check_moved_origin()] - Git repo klipper-backup: Performing moved origin check - https://github.com/gjnijenhuis/voron-v2-green
+2023-08-07 11:12:42,920 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup fetch origin --prune --progress) successfully finished
+2023-08-07 11:12:42,932 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup merge-base --is-ancestor HEAD origin/main) successfully finished
+2023-08-07 11:12:42,944 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup rev-parse HEAD) successfully finished
+2023-08-07 11:12:42,959 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup describe --always --tags --long --dirty --abbrev=8) successfully finished
+2023-08-07 11:12:42,971 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup rev-parse origin/main) successfully finished
+2023-08-07 11:12:42,986 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup describe origin/main --always --tags --long --abbrev=8) successfully finished
+2023-08-07 11:12:43,000 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup rev-list HEAD..7d7a980648765f4f92883c00bbe5e2cf7be9bdf9 --count) successfully finished
+2023-08-07 11:12:43,013 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup rev-list HEAD --count) successfully finished
+2023-08-07 11:12:43,014 [git_deploy.py:_set_versions()] - Git repo klipper-backup: Failed to detect current version, got '7d7a9806'. Falling back to inferred version: v0.0.0-6-g7d7a9806-inferred
+2023-08-07 11:12:43,028 [shell_command.py:_check_proc_success()] - Command (git -C /home/pi/klipper-backup rev-list 7d7a980648765f4f92883c00bbe5e2cf7be9bdf9 --count) successfully finished
+2023-08-07 11:12:43,029 [git_deploy.py:_set_versions()] - Git repo klipper-backup: Failed to detect upstream version, got '7d7a9806'. Falling back to inferred version: v0.0.0-6-inferred
+2023-08-07 11:12:43,029 [git_deploy.py:log_repo_info()] - Git Repo klipper-backup Detected:
+Owner: gjnijenhuis
+Repository Name: Voron-V2-Green
+Path: /home/pi/klipper-backup
+Remote: origin
+Branch: main
+Remote URL: https://github.com/gjnijenhuis/Voron-V2-Green.git
+Recovery URL: https://github.com/gjnijenhuis/Voron-V2-Green.git
+Current Commit SHA: 7d7a980648765f4f92883c00bbe5e2cf7be9bdf9
+Upstream Commit SHA: 7d7a980648765f4f92883c00bbe5e2cf7be9bdf9
+Current Version: v0.0.0-6-g7d7a9806-inferred
+Upstream Version: v0.0.0-6-inferred
+Rollback Commit: a591ae31753faea30ecd30fb4deec4fa8d82115c
+Rollback Branch: main
+Rollback Version: 0.3.4-5-ga591ae31
+Is Dirty: False
+Is Detached: False
+Is Shallow: False
+Commits Behind Count: 0
+Diverged: False
+Repo Warnings:
+  Unofficial remote url: https://github.com/gjnijenhuis/Voron-V2-Green.git
+2023-08-07 11:12:43,030 [base_deploy.py:log_info()] - Git Repo klipper-backup: Channel: dev
+2023-08-07 11:12:43,030 [base_deploy.py:log_info()] - Git Repo klipper-backup: Validity check for git repo passed
