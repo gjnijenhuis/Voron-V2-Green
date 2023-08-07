@@ -15953,3 +15953,104 @@ To https://github.com/gjnijenhuis/Voron-V2-Green.git
 Command {update_git_script} finished
 
 Running Command {update_git_script}...:
+Reinitialized existing Git repository in /home/pi/klipper-backup/.git/
+
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+	 rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+	 alternative filtering tool such as 'git filter-repo'
+	 (https://github.com/newren/git-filter-repo/) instead.  See the
+	 filter-branch manual page for more details; to squelch this warning,
+	 set FILTER_BRANCH_SQUELCH_WARNING=1.
+
+Proceeding with filter-branch...
+
+
+Cannot rewrite branches: You have unstaged changes.
+
+[main ff11946] New backup from 07-08-23
+ 75 files changed, 23 insertions(+), 2724354 deletions(-)
+ delete mode 100644 klipper/printer_data/backup/20230513T103751Z/config/moonraker.conf
+ delete mode 120000 klipper/printer_data/comms/klippy.serial
+ delete mode 100644 klipper/printer_data/config/.VERSION
+ delete mode 100644 klipper/printer_data/config/.moonraker.conf.bkp
+ delete mode 100644 klipper/printer_data/config/KlipperScreen.conf
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230801_135604_A.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230801_135604_B.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230801_140613_A.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230801_140613_B.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230802_164243_A.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belt_20230802_164243_B.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belts_20230801_135604.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belts_20230801_140613.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/belts/belts_20230802_164243.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/crowsnest (1).log
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_163206.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_163206.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_165121.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_165121.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_170446.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_x_20230802_170446.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_163420.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_163420.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_165334.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_165334.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_170702.csv
+ delete mode 100644 klipper/printer_data/config/adxl_results/inputshaper/resonances_y_20230802_170702.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/vibrations/vibrations_20230803_131220.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/vibrations/vibrations_20230803_131220.tar.gz
+ delete mode 100644 klipper/printer_data/config/adxl_results/vibrations/vibrations_20230803_133439.png
+ delete mode 100644 klipper/printer_data/config/adxl_results/vibrations/vibrations_20230803_133439.tar.gz
+ delete mode 120000 klipper/printer_data/config/config
+ delete mode 100644 klipper/printer_data/config/config-20230701-154349.zip
+ delete mode 100644 klipper/printer_data/config/crowsnest.conf
+ delete mode 120000 klipper/printer_data/config/macros
+ delete mode 100644 klipper/printer_data/config/mcu.cfg
+ delete mode 120000 klipper/printer_data/config/moonraker
+ delete mode 100644 klipper/printer_data/config/moonraker.conf
+ delete mode 100644 klipper/printer_data/config/overrides.cfg
+ delete mode 100644 klipper/printer_data/config/overrides/config/hardware/XY.cfg
+ delete mode 100644 klipper/printer_data/config/overrides/config/software/thermal_adjust.cfg
+ delete mode 100644 klipper/printer_data/config/overrides/macros/calibration/test_speed.cfg
+ delete mode 100644 klipper/printer_data/config/overrides/macros/helpers/fan_tach_monitor.cfg
+ delete mode 100644 klipper/printer_data/config/overrides/macros/helpers/homing.cfg
+ delete mode 100644 klipper/printer_data/config/printer.cfg
+
+ delete mode 100644 klipper/printer_data/config/save_variables.cfg
+ delete mode 120000 klipper/printer_data/config/scripts
+ delete mode 100644 klipper/printer_data/config/variables.cfg
+ delete mode 100644 klipper/printer_data/database/data.mdb
+ delete mode 100644 klipper/printer_data/database/lock.mdb
+ delete mode 100644 klipper/printer_data/logs/KlipperScreen.log
+ delete mode 100644 klipper/printer_data/logs/crowsnest.log
+ delete mode 100644 klipper/printer_data/logs/crowsnest.log.2023-08-03
+ delete mode 100644 klipper/printer_data/logs/crowsnest.log.2023-08-04
+ delete mode 100644 klipper/printer_data/logs/crowsnest.log.2023-08-07
+ delete mode 100644 klipper/printer_data/logs/klippy.log
+ delete mode 100644 klipper/printer_data/logs/klippy.log.2023-07-31
+ delete mode 100644 klipper/printer_data/logs/klippy.log.2023-08-01
+ delete mode 100644 klipper/printer_data/logs/klippy.log.2023-08-02
+ delete mode 100644 klipper/printer_data/logs/klippy.log.2023-08-03
+ delete mode 100644 klipper/printer_data/logs/klippy.log.2023-08-04
+ delete mode 120000 klipper/printer_data/logs/mainsail-access.log
+ delete mode 120000 klipper/printer_data/logs/mainsail-error.log
+ delete mode 100644 klipper/printer_data/logs/moonraker-obico.log
+ delete mode 100644 klipper/printer_data/logs/moonraker.log
+ delete mode 100644 klipper/printer_data/logs/moonraker.log.2023-08-03
+ delete mode 100644 klipper/printer_data/logs/moonraker.log.2023-08-04
+ delete mode 120000 klipper/printer_data/logs/sonar.log
+ delete mode 100644 klipper/printer_data/moonraker.asvc
+ delete mode 100644 klipper/printer_data/systemd/crowsnest.env
+ delete mode 100644 klipper/printer_data/systemd/klipper.env
+ delete mode 100644 klipper/printer_data/systemd/moonraker.env
+
+Write g-code response
+Traceback (most recent call last):
+  File "/home/pi/klipper/klippy/gcode.py", line 446, in _respond_raw
+    os.write(self.fd, (msg+"\n").encode())
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+To https://github.com/gjnijenhuis/Voron-V2-Green.git
+   4d76593..ff11946  main -> main
+
+Command {update_git_script} finished
+
+Running Command {update_git_script}...:
