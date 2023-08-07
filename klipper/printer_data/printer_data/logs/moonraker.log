@@ -1000,3 +1000,4 @@ Diverged: False
 2023-08-07 11:05:24,479 [job_state.py:_handle_started()] - Job state initialized: standby
 2023-08-07 11:05:24,743 [klippy_connection.py:_check_ready()] - Klippy ready
 2023-08-07 11:05:25,240 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 11:06:29,252 [klippy_connection.py:wait()] - Request 'gcode/script' pending: 60.00 seconds
