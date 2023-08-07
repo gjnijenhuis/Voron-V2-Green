@@ -2155,3 +2155,33 @@ Repo Warnings:
 2023-08-07 13:53:40,990 [job_state.py:_handle_started()] - Job state initialized: standby
 2023-08-07 13:53:41,294 [klippy_connection.py:_check_ready()] - Klippy ready
 2023-08-07 13:53:41,757 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 14:13:49,588 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 14:13:49,591 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 14:13:49,597 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 9.99ms
+2023-08-07 14:13:50,664 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2023-08-07 14:13:51,926 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2023-08-07 14:13:53,912 [app.py:log_request()] - 404 GET /machine/device_power/devices (127.0.0.1) [No User] 1.82ms
+2023-08-07 14:13:54,885 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2023-08-07 14:13:56,471 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2023-08-07 14:13:56,475 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2023-08-07 14:13:56,722 [job_state.py:_handle_started()] - Job state initialized: standby
+2023-08-07 14:13:57,009 [klippy_connection.py:_check_ready()] - Klippy ready
+2023-08-07 14:13:57,484 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
+2023-08-07 14:15:26,080 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 14:15:26,087 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 14:15:26,098 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 21.04ms
+2023-08-07 14:15:46,075 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 14:15:46,079 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 14:15:46,085 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 11.03ms
+2023-08-07 14:16:05,340 [app.py:prepare()] - Upload Request Received from 10.133.8.66
+2023-08-07 14:16:05,345 [app.py:post()] - Processing Uploaded File: overrides.cfg
+2023-08-07 14:16:05,350 [app.py:log_request()] - 201 POST /server/files/upload (10.133.8.66) [_TRUSTED_USER_] 10.33ms
+2023-08-07 14:16:06,420 [klippy_connection.py:_on_connection_closed()] - Klippy Connection Removed
+2023-08-07 14:16:07,679 [klippy_connection.py:_do_connect()] - Klippy Connection Established
+2023-08-07 14:16:09,917 [app.py:log_request()] - 404 GET /machine/device_power/devices (127.0.0.1) [No User] 2.84ms
+2023-08-07 14:16:10,416 [file_manager.py:get_file_list()] - Updating File List <gcodes>...
+2023-08-07 14:16:11,722 [klippy_connection.py:_request_initial_subscriptions()] - Webhooks Subscribed
+2023-08-07 14:16:11,729 [klippy_connection.py:_request_initial_subscriptions()] - GCode Output Subscribed
+2023-08-07 14:16:11,968 [job_state.py:_handle_started()] - Job state initialized: standby
+2023-08-07 14:16:12,235 [klippy_connection.py:_check_ready()] - Klippy ready
+2023-08-07 14:16:12,733 [data_store.py:_init_sensors()] - Configuring available sensors: ['heater_bed', 'temperature_sensor RaspberryPi', 'temperature_sensor mcu', 'temperature_sensor Chamber', 'z_thermal_adjust', 'extruder']
