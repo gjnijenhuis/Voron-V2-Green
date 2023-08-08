@@ -18773,3 +18773,5 @@
 [08/04/23 15:34:21] crowsnest: V4L2 Control: Options: focus_automatic_continuous=0,focus_absolute=0
 [08/04/23 15:34:23] crowsnest: Starting ustreamer with Device /dev/video0 ...
 [08/04/23 15:34:24] crowsnest:  ... Done!
+[08/07/23 17:45:47] crowsnest: Shutdown or Killed by User!
+[08/07/23 17:45:47] crowsnest: Please come again :)
