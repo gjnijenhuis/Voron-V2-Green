@@ -1,0 +1,22 @@
+Comment,Designator,Footprint,LCSC
+PICOBLADE_2-PIN_HEADER,"PCF3,PCF4",Molex_PicoBlade_53047-0210_1x02_P1.25mm_Vertical,C114130
+Molex 43045-0200,MCU2,Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal,C122431
+JST-PH_4-PIN_HEADER,ESTEP1,JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical,C131334
+JST-PH_2-PIN_HEADER,"PCF1,PCF2",JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical,C131337
+JST-PH_3-PIN_HEADER,"FS1,HEF1,LED1,PROBE1",JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,C131339
+Molex 43650-0200,"HE0,TH0",Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal,C192562
+Molex 43045-1400,MCU1,Molex_Micro-Fit_3.0_43045-1400_2x07_P3.00mm_Horizontal,C477050
+FS 5V,JP13,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+FS 12V,JP12,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+FS 24V,JP11,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+PROBE 5V,JP10,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+PROBE 24V,JP8,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+PCF 5V,JP7,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+PCF 12V,JP6,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+PCF 24V,JP5,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+HEF 5V,JP4,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+HEF 12V,JP3,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+HEF 24V,JP2,SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm,
+AUX Select,JP1,SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm,
+M3,H1,MountingHole_3.2mm_M3_DIN965_Pad,
+M3,H2,MountingHole_3.2mm_M3_DIN965_Pad,
