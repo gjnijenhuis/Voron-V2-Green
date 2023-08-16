@@ -112,7 +112,7 @@ I did not choose to go with the E3D Revo. The Revo has issues with the heatbreak
 
 For the toolhead PCB I'm using a custom PCB that uses the pinout of the Stealthburner PCB so the existing wiring of the LDO kit can be re-used. The custom PCB has the options to wire 12V to the fans, which is needed when the Delta Fans are used for the XOL Toolhead.
 
-[GitHub - XOL PCB](mods/XOL Breakout)
+[GitHub - XOL PCB](mods/XOL%20Breakout)
 
 #### Z-Probe
 
